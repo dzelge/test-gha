@@ -1,3 +1,5 @@
+FROM quay.io/ccitools/cate-base:2.1.0
+
 
 LABEL maintainer="helge.dzierzon@brockmann-consult.de"
 LABEL name=cate
