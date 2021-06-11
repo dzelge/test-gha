@@ -19,6 +19,8 @@ jobs:
           echo "Event: ${{ github.event_name }}"
           echo "Version: ${{ steps.releasename.outputs.VERSION }}"
           echo "_______________________________________________"
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1          
       # Build release
       - name: Build and push
         id: docker_build_release
