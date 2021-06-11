@@ -9,8 +9,8 @@ SHELL ["/bin/bash", "-c"]
 
 
 ARG CATE_USER_NAME=cate
-ARG TT
+ARG TEST
 
 RUN echo "_________________________________"
-RUN echo ${TT}
+RUN echo "TEST ${TEST}"
 RUN echo "_________________________________"
