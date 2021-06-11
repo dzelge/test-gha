@@ -1,0 +1,32 @@
+name: Deploy on Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-docker:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - uses: actions/checkout@v2
+      # Determine release name (e.g. v1.0.0, master)
+      - name: Set Release Name
+        id: releasename
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
+      - name: Tag Info
+        run: |
+          echo "_______________________________________________"
+          echo "Event: ${{ github.event_name }}"
+          echo "Version: ${{ steps.releasename.outputs.VERSION }}"
+          echo "_______________________________________________"
+      # Build release
+      - name: Build and push
+        id: docker_build_release
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          file: Dockerfile
+          push: false
+          tags: tt
+          build-args: |
+            TEST=bla
