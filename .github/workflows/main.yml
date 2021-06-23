@@ -13,7 +13,7 @@ jobs:
       - name: test-xcube-gen
         uses: wei/curl@master
         with:
-          args: https://xcube-gen.brockmann-consult.de
+          args: https://xcube-gen.brockmann-consult.de/api/v2/
       
   build-docker:
     runs-on: ubuntu-latest
