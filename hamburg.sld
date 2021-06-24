@@ -12,7 +12,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -29,7 +29,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11210</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -50,7 +50,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11220</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -67,7 +67,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11230</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -84,7 +84,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11240</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -101,7 +101,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>11300</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -118,7 +118,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -135,7 +135,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12210</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -152,7 +152,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12220</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -169,7 +169,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12230</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -186,7 +186,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12300</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -203,7 +203,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>12400</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -220,7 +220,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>13100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -237,7 +237,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>13300</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -254,7 +254,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>13400</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -271,7 +271,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>14100</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -288,7 +288,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>14200</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -305,7 +305,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>21000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -322,7 +322,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>22000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -339,7 +339,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>23000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -356,7 +356,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>24000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -373,7 +373,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>25000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -390,7 +390,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>31000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -407,7 +407,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>32000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -424,7 +424,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>33000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -441,7 +441,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>40000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -458,7 +458,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>CODE_2018</ogc:PropertyName>
+              <ogc:PropertyName>code_2018</ogc:PropertyName>
               <ogc:Literal>50000</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -472,4 +472,3 @@
     </UserStyle>
   </NamedLayer>
 </StyledLayerDescriptor>
-                                                                               
