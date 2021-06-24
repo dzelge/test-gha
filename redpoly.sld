@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!-- a Named Layer is the basic building block of an SLD document -->
   <NamedLayer>
-    <Name>geodb_admin:geodb_admin_land_use</Name>
+    <Name>helge:helge_land_use</Name>
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
       <Title>Default Polygon</Title>
