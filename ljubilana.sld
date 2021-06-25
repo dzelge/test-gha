@@ -1,474 +1,394 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:se="http://www.opengis.net/se" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<StyledLayerDescriptor version="1.0.0"
+                       xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
+                       xmlns="http://www.opengis.net/sld"
+                       xmlns:ogc="http://www.opengis.net/ogc"
+                       xmlns:xlink="http://www.w3.org/1999/xlink"
+                       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <NamedLayer>
-        <se:Name>SI001L2_LJUBLJANA_UA2018</se:Name>
+        <Name>SI001L2_LJUBLJANA_UA2018</Name>
         <UserStyle>
-            <se:Name>SI001L2_LJUBLJANA_UA2018</se:Name>
-            <se:FeatureTypeStyle>
-                <se:Rule>
-                    <se:Name>11100: Continuous Urban fabric (S.L. > 80%)</se:Name>
-                    <se:Description>
-                        <se:Title>11100: Continuous Urban fabric (S.L. > 80%)</se:Title>
-                    </se:Description>
+            <Name>SI001L2_LJUBLJANA_UA2018</Name>
+            <FeatureTypeStyle>
+                <Rule>
+                    <Name>11100: Continuous Urban fabric (S.L. > 80%)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11100</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#FF0000</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>11210: Discontinuous Dense Urban Fabric (S.L.: 50% - 80%)</se:Name>
-                    <se:Description>
-                        <se:Title>11210: Discontinuous Dense Urban Fabric (S.L.: 50% - 80%)</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#FF0000</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>11210: Discontinuous Dense Urban Fabric (S.L.: 50% - 80%)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11210</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#bf0000</se:CssParameter>
-                        </se:Fill>
-                        <se:Displacement>
-                            <se:DisplacementX>0</se:DisplacementX>
-                            <se:DisplacementY>-0.2</se:DisplacementY>
-                        </se:Displacement>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>11220: Discontinuous Medium Density Urban Fabric (S.L.: 30% - 50%)</se:Name>
-                    <se:Description>
-                        <se:Title>11220: Discontinuous Medium Density Urban Fabric (S.L.: 30% - 50%)</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#bf0000</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>11220: Discontinuous Medium Density Urban Fabric (S.L.: 30% - 50%)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11220</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ff4040</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>11230: Discontinuous Low Density Urban Fabric (S.L.: 10% - 30%)</se:Name>
-                    <se:Description>
-                        <se:Title>11230: Discontinuous Low Density Urban Fabric (S.L.: 10% - 30%)</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ff4040</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>11230: Discontinuous Low Density Urban Fabric (S.L.: 10% - 30%)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11230</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ff8080</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>11240: Discontinuous very low density urban fabric (S.L. &lt; 10%)</se:Name>
-                    <se:Description>
-                        <se:Title>11240: Discontinuous very low density urban fabric (S.L. &lt; 10%)</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ff8080</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>11240: Discontinuous very low density urban fabric (S.L. &lt; 10%)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11240</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ffbfbf</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>11300: Isolated Structures</se:Name>
-                    <se:Description>
-                        <se:Title>11300: Isolated Structures</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ffbfbf</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>11300: Isolated Structures</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>11300</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#cc6666</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12100: Industrial, commercial, public, military and private units</se:Name>
-                    <se:Description>
-                        <se:Title>12100: Industrial, commercial, public, military and private units</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#cc6666</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12100: Industrial, commercial, public, military and private units</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12100</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#cc4df2</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12210: Fast transit roads and associated land</se:Name>
-                    <se:Description>
-                        <se:Title>12210: Fast transit roads and associated land</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#cc4df2</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12210: Fast transit roads and associated land</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12210</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#959595</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12220: Other roads and associated land</se:Name>
-                    <se:Description>
-                        <se:Title>12220: Other roads and associated land</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#959595</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12220: Other roads and associated land</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12220</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#b3b3b3</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12230: Railways and associated land</se:Name>
-                    <se:Description>
-                        <se:Title>12230: Railways and associated land</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#b3b3b3</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12230: Railways and associated land</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12230</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#595959</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12300: Port areas</se:Name>
-                    <se:Description>
-                        <se:Title>12300: Port areas</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#595959</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12300: Port areas</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12300</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#e6cccc</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>12400: Airports</se:Name>
-                    <se:Description>
-                        <se:Title>12400: Airports</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#e6cccc</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>12400: Airports</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>12400</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#e6cce6</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>13100: Mineral extraction and dump sites</se:Name>
-                    <se:Description>
-                        <se:Title>13100: Mineral extraction and dump sites</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#e6cce6</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>13100: Mineral extraction and dump sites</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>13100</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#734d37</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>13300: Construction sites</se:Name>
-                    <se:Description>
-                        <se:Title>13300: Construction sites</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#734d37</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>13300: Construction sites</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>13300</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#b9a56e</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>13400: Land without current use</se:Name>
-                    <se:Description>
-                        <se:Title>13400: Land without current use</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#b9a56e</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>13400: Land without current use</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>13400</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#874545</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>14100: Green urban areas</se:Name>
-                    <se:Description>
-                        <se:Title>14100: Green urban areas</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#874545</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>14100: Green urban areas</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>14100</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#8cdc00</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>14200: Sports and leisure facilities</se:Name>
-                    <se:Description>
-                        <se:Title>14200: Sports and leisure facilities</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#8cdc00</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>14200: Sports and leisure facilities</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>14200</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#afd2a5</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>21000: Arable land (annual crops)</se:Name>
-                    <se:Description>
-                        <se:Title>21000: Arable land (annual crops)</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#afd2a5</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>21000: Arable land (annual crops)</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>21000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ffffa8</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>22000: Permanent crops</se:Name>
-                    <se:Description>
-                        <se:Title>22000: Permanent crops</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ffffa8</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>22000: Permanent crops</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>22000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#f2a64d</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>23000: Pastures</se:Name>
-                    <se:Description>
-                        <se:Title>23000: Pastures</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#f2a64d</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>23000: Pastures</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>23000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#e6e64d</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>24000: Complex and mixed cultivation patterns</se:Name>
-                    <se:Description>
-                        <se:Title>24000: Complex and mixed cultivation patterns</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#e6e64d</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>24000: Complex and mixed cultivation patterns</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>24000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ffe64d</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>25000: Orchads</se:Name>
-                    <se:Description>
-                        <se:Title>25000: Orchads</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ffe64d</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>25000: Orchads</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>25000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#f2cc80</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>31000: Forests</se:Name>
-                    <se:Description>
-                        <se:Title>31000: Forests</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#f2cc80</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>31000: Forests</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>31000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#008c00</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>32000: Herbaceous vegetation associations</se:Name>
-                    <se:Description>
-                        <se:Title>32000: Herbaceous vegetation associations</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#008c00</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>32000: Herbaceous vegetation associations</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>32000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ccf24d</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>33000: Open spaces with little or no vegetations</se:Name>
-                    <se:Description>
-                        <se:Title>33000: Open spaces with little or no vegetations</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ccf24d</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>33000: Open spaces with little or no vegetations</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>33000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#ccffcc</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>40000: Wetlands</se:Name>
-                    <se:Description>
-                        <se:Title>40000: Wetlands</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#ccffcc</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>40000: Wetlands</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>40000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#a6a6ff</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-                <se:Rule>
-                    <se:Name>50000: Water</se:Name>
-                    <se:Description>
-                        <se:Title>50000: Water</se:Title>
-                    </se:Description>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#a6a6ff</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+                <Rule>
+                    <Name>50000: Water</Name>
                     <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
                         <ogc:PropertyIsEqualTo>
                             <ogc:PropertyName>code_2018</ogc:PropertyName>
                             <ogc:Literal>50000</ogc:Literal>
                         </ogc:PropertyIsEqualTo>
                     </ogc:Filter>
-                    <se:PolygonSymbolizer>
-                        <se:Fill>
-                            <se:CssParameter name="fill">#80f2e6</se:CssParameter>
-                        </se:Fill>
-                    </se:PolygonSymbolizer>
-                </se:Rule>
-            </se:FeatureTypeStyle>
+                    <PolygonSymbolizer>
+                        <Fill>
+                            <CssParameter name="fill">#80f2e6</CssParameter>
+                        </Fill>
+                    </PolygonSymbolizer>
+                </Rule>
+            </FeatureTypeStyle>
         </UserStyle>
     </NamedLayer>
 </StyledLayerDescriptor>
