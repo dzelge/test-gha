@@ -18,7 +18,7 @@
           </ogc:Filter>
           <se:PolygonSymbolizer>
             <se:Fill>
-              <se:SvgParameter name="fill">#800000</se:SvgParameter>
+              <se:CssParameter name="fill">#800000</se:CssParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
