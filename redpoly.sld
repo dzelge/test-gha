@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!-- a Named Layer is the basic building block of an SLD document -->
   <NamedLayer>
-    <Name>eea-urban-atlas:eea-urban-atlas_SI001L2_LJUBLJANA_UA2018</Name>
+    <Name>default_polygon</Name>
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
       <Title>Default Polygon</Title>
