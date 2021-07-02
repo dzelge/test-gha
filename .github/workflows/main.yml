@@ -7,12 +7,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        tt: ${{ secrets.T1 }}
     steps:
       # Checkout repository
       - uses: actions/checkout@v2
       # Determine release name (e.g. v1.0.0, master)
       - name: tt
-        run: echo ${{ secrets.T1 }}
+        run: echo ${{ secrets }}
