@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        tt: ${{ secrets }}
+        tt: ${{ secrets.T1 }}
     steps:
       # Checkout repository
       - uses: actions/checkout@v2
