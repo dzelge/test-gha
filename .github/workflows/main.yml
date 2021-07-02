@@ -4,6 +4,9 @@ on:
   push:
   workflow_dispatch:
 
+env:
+  TT: ${{ secrets.*.name }}
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -13,7 +16,7 @@ jobs:
       # Determine release name (e.g. v1.0.0, master)
       - name: tt
         run: |
-          echo ${{ secrets.*.name }}
+          echo $TT 
           #for secret in $(echo ${{ secrets.*.name }})
           #do
           #  print $secret
