@@ -15,4 +15,4 @@ jobs:
       - uses: actions/checkout@v2
       # Determine release name (e.g. v1.0.0, master)
       - name: tt
-        run: echo ${{ matrix.tt }}
+        run: echo ${{ secrets.T1 }}
