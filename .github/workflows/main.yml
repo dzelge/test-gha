@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 env:
-  TT: ${{ secrets.*.name.arr }}
+  TT: "${{ secrets.*.name }}"
 
 jobs:
   test:
