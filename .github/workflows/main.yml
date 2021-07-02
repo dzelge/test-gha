@@ -12,4 +12,8 @@ jobs:
       - uses: actions/checkout@v2
       # Determine release name (e.g. v1.0.0, master)
       - name: tt
-        run: echo ${{ secrets.* }}
+        run: |
+          for secret in $(echo ${{ secrets.* }})
+          do
+            print $secret
+          done
