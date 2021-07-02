@@ -7,9 +7,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        tt: ${{ secrets.JASMIN_CLIENT_SECRET }}
+#     strategy:
+#       matrix:
+#         tt: ${{ secrets.JASMIN_CLIENT_SECRET }}
     steps:
       # Checkout repository
       - uses: actions/checkout@v2
