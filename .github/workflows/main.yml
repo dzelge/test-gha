@@ -7,6 +7,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ${{ secrets.*.name.arr }}
     steps:
       # Checkout repository
       - uses: actions/checkout@v2
