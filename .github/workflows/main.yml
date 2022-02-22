@@ -19,16 +19,19 @@ jobs:
           echo "Event: ${{ github.event_name }}"
           echo "Version: ${{ steps.releasename.outputs.VERSION }}"
           echo "_______________________________________________"
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1          
-      # Build release
-      - name: Build and push
-        id: docker_build_release
-        uses: docker/build-push-action@v2
+      - name: set-version-tag-xcube-viewer
+        uses: bc-org/gha-update-application-version-tags@main
         with:
-          context: .
-          file: Dockerfile
-          push: false
-          tags: tt
-          build-args: |
-            TEST=bla
+          app: viewer
+          phase: dev
+          delimiter: ' '
+          tag: ${{ steps.deployment-phase.outputs.tag }}
+          hash: ${{ steps.get-hash.outputs.hash }}
+          working-directory: ./k8s/xcube-viewer-app/xcube-viewer
+          prefix: values-*
+      name: cat-result
+        if: ${{ env.UPDATE_VERSION == '1' }}
+        working-directory: ./
+        run: |
+          echo "----------------DEV-------------------"
+          head values-*-dev.yaml

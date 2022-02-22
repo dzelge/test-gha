@@ -1,0 +1,5 @@
+default:
+  - &bc-viewer-host dev.bigfe-viewer.brockmann-consult.de
+  - &viewer-tag latest
+  - &viewer-hash null
+  - &viewer-img-repo quay.io/bcdev/xcube-view
