@@ -4,12 +4,10 @@ on:
   push:
 
 jobs:
-  build-docker:
+  tt:
     runs-on: ubuntu-latest
     steps:
-      # Checkout repository
       - uses: actions/checkout@v2
-      # Determine release name (e.g. v1.0.0, master)
       - name: Set Release Name
         id: releasename
         run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
