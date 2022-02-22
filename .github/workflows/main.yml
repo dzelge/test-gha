@@ -23,8 +23,8 @@ jobs:
           app: viewer
           phase: dev
           delimiter: ' '
-          tag: ${{ steps.deployment-phase.outputs.tag }}
-          hash: ${{ steps.get-hash.outputs.hash }}
+          tag: latest
+          hash: sha256-abcd
           working-directory: ./
           prefix: values-*
       - name: cat-result
