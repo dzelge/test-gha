@@ -8,28 +8,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set Release Name
-        id: releasename
-        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
-      - name: Tag Info
-        run: |
-          echo "_______________________________________________"
-          echo "Event: ${{ github.event_name }}"
-          echo "Version: ${{ steps.releasename.outputs.VERSION }}"
-          echo "_______________________________________________"
-      - name: set-version-tag-xcube-viewer
-        uses: bc-org/gha-update-application-version-tags@main
-        with:
-          app: viewer
-          phase: dev
-          delimiter: ' '
-          tag: ${{ steps.deployment-phase.outputs.tag }}
-          hash: ${{ steps.get-hash.outputs.hash }}
-          working-directory: ./k8s/xcube-viewer-app/xcube-viewer
-          prefix: values-*
-      name: cat-result
-        if: ${{ env.UPDATE_VERSION == '1' }}
-        working-directory: ./
-        run: |
-          echo "----------------DEV-------------------"
-          head values-*-dev.yaml
+#      - name: Set Release Name
+#        id: releasename
+#        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
+#      - name: Tag Info
+#        run: |
+#          echo "_______________________________________________"
+#          echo "Event: ${{ github.event_name }}"
+#          echo "Version: ${{ steps.releasename.outputs.VERSION }}"
+#          echo "_______________________________________________"
+#      - name: set-version-tag-xcube-viewer
+#        uses: bc-org/gha-update-application-version-tags@main
+#        with:
+#          app: viewer
+#          phase: dev
+#          delimiter: ' '
+#          tag: ${{ steps.deployment-phase.outputs.tag }}
+#          hash: ${{ steps.get-hash.outputs.hash }}
+#          working-directory: ./k8s/xcube-viewer-app/xcube-viewer
+#          prefix: values-*
+#      name: cat-result
+#        if: ${{ env.UPDATE_VERSION == '1' }}
+#        working-directory: ./
+#        run: |
+#          echo "----------------DEV-------------------"
+#          head values-*-dev.yaml
