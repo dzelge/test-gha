@@ -25,11 +25,10 @@ jobs:
           delimiter: ' '
           tag: ${{ steps.deployment-phase.outputs.tag }}
           hash: ${{ steps.get-hash.outputs.hash }}
-          working-directory: ./k8s/xcube-viewer-app/xcube-viewer
+          working-directory: ./
           prefix: values-*
-#      name: cat-result
-#        if: ${{ env.UPDATE_VERSION == '1' }}
-#        working-directory: ./
-#        run: |
-#          echo "----------------DEV-------------------"
-#          head values-*-dev.yaml
+      name: cat-result
+        working-directory: ./
+        run: |
+          echo "----------------DEV-------------------"
+          head values-*-dev.yaml
