@@ -21,7 +21,7 @@ jobs:
         uses: bc-org/gha-update-application-version-tags@main
         with:
           app: viewer
-          phase: dev
+          phase: prod
           delimiter: ' '
           tag: latest
           hash: sha256-abcd
