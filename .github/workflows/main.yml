@@ -11,12 +11,12 @@ jobs:
       - name: Set Release Name
         id: releasename
         run: echo ::set-output name=VERSION::${GITHUB_REF#refs/*/}
-#      - name: Tag Info
-#        run: |
-#          echo "_______________________________________________"
-#          echo "Event: ${{ github.event_name }}"
-#          echo "Version: ${{ steps.releasename.outputs.VERSION }}"
-#          echo "_______________________________________________"
+      - name: Tag Info
+        run: |
+          echo "_______________________________________________"
+          echo "Event: ${{ github.event_name }}"
+          echo "Version: ${{ steps.releasename.outputs.VERSION }}"
+          echo "_______________________________________________"
 #      - name: set-version-tag-xcube-viewer
 #        uses: bc-org/gha-update-application-version-tags@main
 #        with:
